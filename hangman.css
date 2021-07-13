@@ -1,0 +1,59 @@
+.restart-container{
+  visibility: hidden;
+  border: 1.5px dashed grey;
+  border-color: #c1b2bb;
+}
+
+header{
+  font-size: 20.5px;
+}
+
+#startGame{
+  font-size: 17px;
+}
+
+.figure-container {
+  margin-top: -5rem;
+  margin-left: 5rem;
+  stroke:black;
+  stroke-width: 5px;
+}
+
+.hangman-part{
+  width: 200px;
+  visibility: hidden;
+}
+
+.status{
+  font-size: 22.5px;
+  margin-left: 70rem;
+  margin-top: 6rem;
+  visibility: hidden;
+}
+
+.input-output-container{
+  font-size: 27px;
+  align-items: center;
+  margin-left: 28rem;
+  margin-top: -17rem;
+}
+
+.outputLetters{
+  margin-top: 20px;
+  margin-left: 10rem;
+}
+
+.word{
+  font-size: 30px;
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+#userInput{
+  font-size: 15px;
+}
+
+#submitInput{
+  font-size: 15px;
+}

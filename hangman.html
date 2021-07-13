@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="hangman.css">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <center>
+      <h1>HANGMAN</h1>
+      <header>
+        <p> That's a funny old game, let's see if you win! </p>
+        <div class="startGame">
+          <p> All words are in English, take care!<p>
+          <button onclick="startGame()">start game</button>
+        </div>
+
+        <div class="restart-container">
+          <div class="finalMessage"></div>
+          <button class="restart" onclick="startGame()">restart game </button>
+        </div>
+
+      </header>
+    </center>
+
+    <div class="status">
+      <p> Rounds: <span class="rounds"></span></p>
+      <p> Wrongs: <span class="wrongs"></span></p>
+    </div>
+
+    <svg height="250" width="200" class="figure-container">
+      <line x1="20" y1="230" x2="100" y2="230" class="hangman-part" id='100'/>
+      <line x1="60" y1="20" x2="60" y2="230" class="hangman-part" id='101'/>
+      <line x1="57" y1="20" x2="145" y2="20" class="hangman-part" id="102"/>
+      <line x1="140" y1="20" x2="140" y2="50" class="hangman-part" id='103'/>
+
+      <circle cx="140" cy="70" r="20" class="hangman-part" id='104'/>
+
+      <line x1="140" y1="60" x2="140" y2="150" class="hangman-part" id='105'/>
+
+      <line x1="140" y1="120" x2="120" y2="100" class="hangman-part" id='106'/>
+      <line x1="140" y1="120" x2="160" y2="100" class="hangman-part" id='107'/>
+
+      <line x1="140" y1="150" x2="120" y2="180" class="hangman-part" id='108'/>
+      <line x1="140" y1="150" x2="160" y2="180" class="hangman-part" id="109"/>
+    </svg>
+
+    <div class="input-output-container"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="hangman.js"></script>
+  </body>
+</html>
