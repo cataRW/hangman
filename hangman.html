@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="hangman.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
   </head>
-  <body backgroundColor="#f4e986">
+  <body backgroundColor="#f4e996">
     <center>
       <h1>HANGMAN</h1>
       <header>
-        <p>That's a funny old game, let's see if you win! All words are in english, take care!</p>
+        <p> That's a funny old game, let's see if you win! All words are in english, take care! </p>
         <button id="startGame" onclick="startGame()">start game</button>
 
         <div class="restart-container">
           <div class="finalMessage"></div>
-          <button class="restart" onclick="startGame()">restart game</button>
+          <button id="restart" onclick="startGame()">restart game </button>
         </div>
 
       </header>
     </center>
 
     <div class="status">
-      <p>Rounds: <span class="rounds"></span></p>
-      <p>Wrongs: <span class="wrongs"></span></p>
+      <p> Rounds: <span class="rounds"></span></p>
+      <p> Wrongs: <span class="wrongs"></span></p>
     </div>
 
     <svg height="250" width="200" class="figure-container">
@@ -42,9 +43,7 @@
       <line x1="140" y1="150" x2="160" y2="180" class="hangman-part" id="109"/>
     </svg>
 
-    <div class="input-output-container"></div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="hangman.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="hangman.js"></script>
   </body>
 </html>
